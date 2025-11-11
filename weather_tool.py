@@ -5,9 +5,9 @@ import re
 
 def get_weather(location=None, lat=None, lon=None):
     if location:
-        url = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid=e6e9f317cab5411b9303ce18016706f0"
+        url = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid=[your_api_key]"
     elif lat and lon:
-        url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=e6e9f317cab5411b9303ce18016706f0"
+        url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=[your_api_key]"
     else:
         return "Error: Either location or lat/lon must be provided"
     
