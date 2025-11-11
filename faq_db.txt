@@ -1,0 +1,64 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "category": "General",
+      "question": "What is this platform used for?",
+      "answer": "Our platform helps businesses automate customer interactions using AI chatbots that can understand natural language and provide instant responses."
+    },
+    {
+      "id": 2,
+      "category": "Account",
+      "question": "How can I create an account?",
+      "answer": "You can create an account by clicking on the 'Sign Up' button on our homepage and filling in your name, email, and password. A verification email will be sent to confirm your registration."
+    },
+    {
+      "id": 3,
+      "category": "Pricing",
+      "question": "Do you offer a free trial?",
+      "answer": "Yes, we offer a 7-day free trial with full access to all features. You can upgrade or cancel anytime during the trial period."
+    },
+    {
+      "id": 4,
+      "category": "Integration",
+      "question": "Can I integrate this system with my CRM?",
+      "answer": "Yes, we support integration with popular CRMs like HubSpot, Salesforce, and Zoho. You can find setup instructions in our documentation under the 'Integrations' section."
+    },
+    {
+      "id": 5,
+      "category": "Security",
+      "question": "How secure is my data?",
+      "answer": "All user data is encrypted both in transit and at rest using industry-standard AES-256 encryption. We are GDPR and SOC 2 compliant."
+    },
+    {
+      "id": 6,
+      "category": "Support",
+      "question": "How can I contact support?",
+      "answer": "You can reach our support team through live chat on the website or by emailing support@ourplatform.com. Our average response time is under 2 hours."
+    },
+    {
+      "id": 7,
+      "category": "Technical",
+      "question": "What is RAG and how does it work in this system?",
+      "answer": "RAG stands for Retrieval-Augmented Generation. It improves AI accuracy by retrieving relevant documents or FAQs from a knowledge base before generating an answer."
+    },
+    {
+      "id": 8,
+      "category": "Billing",
+      "question": "Can I change my plan later?",
+      "answer": "Yes, you can upgrade or downgrade your plan anytime from the 'Billing' section in your dashboard. Changes will take effect in the next billing cycle."
+    },
+    {
+      "id": 9,
+      "category": "Customization",
+      "question": "Can I customize the chatbot’s responses?",
+      "answer": "Absolutely! You can edit the chatbot’s tone, default responses, and behavior from the ‘AI Settings’ panel in your admin dashboard."
+    },
+    {
+      "id": 10,
+      "category": "Troubleshooting",
+      "question": "Why is my chatbot not responding to messages?",
+      "answer": "Check your API key and internet connection. If both are fine, try restarting the bot instance from the control panel. Contact support if the issue persists."
+    }
+  ]
+}
