@@ -40,3 +40,7 @@ Here I have used tavily's API to search web.
 
 ### Code explanation 
 It is same as previous one's just some changes in tool function and tool description and everything is same as previous ones.
+
+## combined_agent
+
+This is just the combination of all the above agents/workflow
