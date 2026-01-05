@@ -21,19 +21,12 @@ def web_search(query: str):
     response = tavily_client.search(query)
     return json.dumps(response, indent=2)
 
-def faq_db():
-    with open('faq_db.txt', 'r') as file:
-        content = file.read()
-    return content
-
 def call_function(name, args):
     try:    
         if name == "get_weather":
             return get_weather(**args)
         elif name == "web_search":
             return web_search(**args)
-        elif name == "faq_db":
-            return faq_db()
     except Exception as e:
         return f"Something went wrong"
 
@@ -83,23 +76,6 @@ def call_llm(prompt: str) -> str:
                     "required": ["location"],
                 },
             },
-        },
-        {
-            "type": "function",
-            "function": {
-                "name": "faq_db",
-                "description": "Retrieve the FAQ knowledge base content.",
-                "parameters": {
-                    "type": "object",
-                    "properties": {
-                        "query": {
-                            "type": "string",
-                            "description": "The user's question or query that needs to be answered using the FAQ database. Example: 'How can I reset my password?'"
-                        }
-                    },
-                    "required": []
-                }
-            }
         }
     ]
 
