@@ -23,17 +23,6 @@ I have used openweather's api to get the weather information and for the ai mode
 3. Then the function to call `get_weather` function.
 4. Then the `llm_call` function where I have provided the llm completion and tool description. So, here for the first llm call the llm will provide the latitudes and longitudes if possible, it will make the argument for `call_function` which will then add that arguments into `get_weather` function, then the for the append part, the arguments provided by the llm and the result from the tool will be appended to input_messages, then the final llm call will provide the final answer.
 
-## rag
-
-Here I have used a sample text file to demonstrate the RAG system. For the ai model calls I have used GroqCloud.
-
-### Code explanation
-1. First I have imported the required modules like requests for api calls, json for handling json data.
-2. The `faq_db` function opens the `faq_db.txt` file which has faq data. 
-3. Then the function to call `faq_db` function.
-4. Then, the same as `weather_tool` code. It has llm calls, just a little tweak, not the tweak but let's still understand it. The first llm call will decide that wheather there is a need of tool call or not, then when it decided, then it will do it accordingly. Let's just say that it decided to call the tool, then the `faq_db` function will be called via `call_function` function, so it will have the data of `faq_db.txt` file which will then be appended into input_messages. Then, in the last llm call the whole of the input_messages will be provided to llm which will have user query, tool result (which is `faq_db.txt` file data) and from that the llm will make the answer.
-5. Then just call the `llm_call` function..
-
 ## web_search
 
 Here I have used tavily's API to search web.
